@@ -27,62 +27,65 @@
                 <section class="container">
                     <ul class="filter">
                         <li class="filter__item">
-                            <a class="filter__button filter__button--active" href="#">SELECTED</a>
+                            <a class="filter__button filter__button--active" href="javascript:void(0)" data-filter="1">SELECTED</a>
                         </li>
                         <li class="filter__item">
-                            <a class="filter__button" href="#">GRAPHIC DESIGN</a>
+                            <a class="filter__button" href="javascript:void(0)" data-filter="2">GRAPHIC DESIGN</a>
                         </li>
                         <li class="filter__item">
-                            <a class="filter__button" href="#">ILLUSTRATION</a>
+                            <a class="filter__button" href="javascript:void(0)" data-filter="3">ILLUSTRATION</a>
                         </li>
                         <li class="filter__item">
-                            <a class="filter__button" href="#">INDUSTRIAL DESIGN</a>
+                            <a class="filter__button" href="javascript:void(0)">INDUSTRIAL DESIGN</a>
                         </li>
                         <li class="filter__item">
-                            <a class="filter__button" href="#">ABOUT</a>
+                            <a class="filter__button" href="javascript:void(0)">ABOUT</a>
                         </li>
                     </ul>
                 </section>
                 <ul class="social">
                     <li class="social__item">
-                        <a class="social__button" href="#">
-                            <img src="img/ico-twitter.svg" alt="">
+                        <a class="social__button" href="https://www.instagram.com/ccianchan/" target="_blank">
+                            <img src="img/ico-twitter.svg" alt="twitter">
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__button" href="#">
-                            <img src="img/ico-instagram.svg" alt="">
+                        <a class="social__button" href="#" target="_blank">
+                            <img src="img/ico-instagram.svg" alt="instagram">
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__button" href="">
-                            <img src="img/ico-weibo.svg" alt="">
+                        <a class="social__button" href="" target="_blank">
+                            <img src="img/ico-weibo.svg" alt="weibo">
                         </a>
                     </li>
                 </ul>
             </header>
+
+            <!-- MAIN CONTENT -->
             <section class="container">
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row filtr-container">
+                    <div class="col-md-4 filtr-item" data-category="1" data-sort="value">
                         <a class="img-wrapper" href="#modal-01">
-                            <img class="img-responsive" src="http://via.placeholder.com/400x400" alt="">
+                            <img class="img-responsive img-wrapper__img" src="http://via.placeholder.com/600x600" alt="">
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="http://via.placeholder.com/400x400" alt="">
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <img class="img-responsive img-wrapper__img" src="http://via.placeholder.com/800x800" alt="">
                     </div>
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="http://via.placeholder.com/400x400" alt="">
+                    <div class="col-md-4 filtr-item" data-category="3" data-sort="value">
+                        <img class="img-responsive img-wrapper__img" src="http://via.placeholder.com/1000x1000" alt="">
                     </div>
                 </div>
             </section>
+            <!-- MAIN CONTENT END -->
         </div>
 
         <div class="remodal" data-remodal-id="modal-01">
             <button data-remodal-action="close" class="remodal-close"></button>
-            <img src="http://via.placeholder.com/400x400" alt="">
-            <img src="http://via.placeholder.com/400x400" alt="">
-            <img src="http://via.placeholder.com/400x400" alt="">
+            <img class="img-responsive remodal__img" src="http://via.placeholder.com/1000x1000" alt="">
+            <img class="img-responsive remodal__img" src="http://via.placeholder.com/1000x1000" alt="">
+            <img class="img-responsive remodal__img" src="http://via.placeholder.com/1000x1000" alt="">
         </div>
         <!-- content end -->
 
@@ -90,6 +93,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/jquery.filterizr.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

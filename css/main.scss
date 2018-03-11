@@ -43,12 +43,12 @@ header {
         padding-right: 40px;
     }
     &__button {
-        $color-button-active: blue;
+        $color-button-active: #333;
         display: block;
         text-align: center;
         line-height: 40px;
         font-size: 14px;
-        color: #333;
+        color: #999;
         text-decoration: none;
         transition: all .15s linear;
         &--active {
@@ -76,8 +76,7 @@ header {
             transform: translateY(0);
             transition: all .15s linear;
         }
-        &:hover,
-        &:focus {
+        &:hover {
             img { 
                 transform: translateY(-4px);
             }
@@ -86,11 +85,28 @@ header {
 }
 
 .img-responsive { width: 100% }
+.img-wrapper {
+    display: block;
+    background-color: #000;
+
+    &__img {
+        transition: .15s all linear;
+    }
+    &:hover,
+    &:focus {
+        .img-wrapper {
+            &__img { opacity: .5 }
+        }
+    }
+}
 
 
-
-
-
+// modal
+.remodal {
+    &__img {
+        & + & { margin-top: 35px }
+    }
+}
 
 
 

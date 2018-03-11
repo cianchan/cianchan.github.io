@@ -1669,14 +1669,14 @@ header {
     text-align: center;
     line-height: 40px;
     font-size: 14px;
-    color: #333;
+    color: #999;
     text-decoration: none;
     transition: all .15s linear; }
     .filter__button--active {
-      color: blue;
+      color: #333;
       text-decoration: underline; }
     .filter__button:hover, .filter__button:focus {
-      color: blue; }
+      color: #333; }
 
 .social {
   display: flex;
@@ -1690,10 +1690,21 @@ header {
     .social__button img {
       transform: translateY(0);
       transition: all .15s linear; }
-    .social__button:hover img, .social__button:focus img {
+    .social__button:hover img {
       transform: translateY(-4px); }
 
 .img-responsive {
   width: 100%; }
+
+.img-wrapper {
+  display: block;
+  background-color: #000; }
+  .img-wrapper__img {
+    transition: .15s all linear; }
+  .img-wrapper:hover .img-wrapper__img, .img-wrapper:focus .img-wrapper__img {
+    opacity: 0.5; }
+
+.remodal__img + .remodal__img {
+  margin-top: 35px; }
 
 /*# sourceMappingURL=main.css.map */
