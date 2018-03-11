@@ -1,0 +1,96 @@
+@import '_normalize', '_grid', '_h5bp', '_remodal', '_remodal-default-theme';
+
+
+// ============================================
+// customize css
+// ============================================
+$size-logo: 160px;
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-bottom: 80px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    margin-top: 80px;
+    margin-bottom: 48px;
+}
+
+.logo {
+    display: flex;
+    &__img {
+        margin: auto;
+        width: $size-logo;
+        height: $size-logo;
+        border-radius: 50%;
+    }
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 32px;
+
+    &__item {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    &__button {
+        $color-button-active: blue;
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+        transition: all .15s linear;
+        &--active {
+            color: $color-button-active;
+            text-decoration: underline;
+        }
+        &:hover,
+        &:focus {
+            color: $color-button-active;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    &__item {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &__button {
+        display: flex;
+        padding: 8px;
+        img {
+            transform: translateY(0);
+            transition: all .15s linear;
+        }
+        &:hover,
+        &:focus {
+            img { 
+                transform: translateY(-4px);
+            }
+        }
+    }
+}
+
+.img-responsive { width: 100% }
+
+
+
+
+
+
+
+

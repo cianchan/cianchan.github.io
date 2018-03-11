@@ -1,16 +1,102 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CianChan Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/main.css" rel="stylesheet">
-  </head>
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-  <body>
-    <h1>你好，世界！</h1>
-    <script src=""></script>
-  </body>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="clearfix">
+            <header>
+                <section class="logo">
+                    <img class="logo__img" src="img/logo.png" alt="">
+                </section>
+                <section class="container">
+                    <ul class="filter">
+                        <li class="filter__item">
+                            <a class="filter__button filter__button--active" href="#">SELECTED</a>
+                        </li>
+                        <li class="filter__item">
+                            <a class="filter__button" href="#">GRAPHIC DESIGN</a>
+                        </li>
+                        <li class="filter__item">
+                            <a class="filter__button" href="#">ILLUSTRATION</a>
+                        </li>
+                        <li class="filter__item">
+                            <a class="filter__button" href="#">INDUSTRIAL DESIGN</a>
+                        </li>
+                        <li class="filter__item">
+                            <a class="filter__button" href="#">ABOUT</a>
+                        </li>
+                    </ul>
+                </section>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__button" href="#">
+                            <img src="img/ico-twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__button" href="#">
+                            <img src="img/ico-instagram.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__button" href="">
+                            <img src="img/ico-weibo.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </header>
+            <section class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="img-wrapper" href="#modal-01">
+                            <img class="img-responsive" src="http://via.placeholder.com/400x400" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="http://via.placeholder.com/400x400" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="http://via.placeholder.com/400x400" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="remodal" data-remodal-id="modal-01">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="http://via.placeholder.com/400x400" alt="">
+            <img src="http://via.placeholder.com/400x400" alt="">
+            <img src="http://via.placeholder.com/400x400" alt="">
+        </div>
+        <!-- content end -->
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
 </html>
