@@ -5,10 +5,10 @@
 // customize css
 // ============================================
 $size-logo: 160px;
+$height-footer: 80px;
 
 body {
     font-family: -apple-system, 'Questrial', system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    margin-bottom: 80px;
 }
 
 ul {
@@ -21,6 +21,21 @@ header {
     margin-top: 80px;
     margin-bottom: 48px;
 }
+
+.wrapper {
+    min-height: calc(100vh - $height-footer);
+}
+
+.footer {
+    display: flex;
+    height: $height-footer;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
 
 .logo {
     display: flex;
