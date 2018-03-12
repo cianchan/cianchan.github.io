@@ -1,19 +1,21 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="zh-CN">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CianChan Portfolio</title>
-        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>CianChan Portfolio</title>
+        <meta name="description" content="CianChan's Portfolio">
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
         <script src="js/pace.js"></script>
-        <link href="css/pace-theme-minimal.tmpl.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/pace-theme-minimal.tmpl.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -38,10 +40,10 @@
                             <a class="filter__button" href="javascript:void(0)" data-filter="3">Illustration</a>
                         </li>
                         <li class="filter__item">
-                            <a class="filter__button" href="javascript:void(0)">Industrial Design</a>
+                            <a class="filter__button" href="javascript:void(0)" data-filter="4">Industrial Design</a>
                         </li>
                         <li class="filter__item">
-                            <a class="filter__button" href="javascript:void(0)">About</a>
+                            <a class="filter__button" href="javascript:void(0)" data-filter="5">About</a>
                         </li>
                     </ul>
                 </section>
@@ -67,21 +69,168 @@
             <!-- MAIN CONTENT -->
             <section class="container">
                 <div class="row filtr-container">
-                    <div class="col-md-8 filtr-item filter-item" data-category="1,3" data-sort="value">
+
+                    <!-- IMAGE GALLERY -->
+                    <div class="col-md-4 filtr-item" data-category="1,3" data-sort="value">
                         <a class="img-wrapper" href="#modal-01">
                             <img class="img-responsive img-wrapper__img" src="img/links/illus/illus.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-md-4 filtr-item filter-item" data-category="1,3" data-sort="value">
+                    <div class="col-md-4 filtr-item" data-category="1,3" data-sort="value">
                         <a class="img-wrapper" href="#modal-02">
                             <img class="img-responsive img-wrapper__img" src="img/links/card/card.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-md-4 filtr-item filter-item" data-category="1,3" data-sort="value">
+                    <div class="col-md-4 filtr-item" data-category="1,3" data-sort="value">
                         <a class="img-wrapper" href="#modal-03">
                             <img class="img-responsive img-wrapper__img" src="img/links/24/24.jpg" alt="">
                         </a>
                     </div>
+                    <div class="col-md-4 filtr-item" data-category="1,2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-04">
+                            <img class="img-responsive img-wrapper__img" src="img/links/letter/letter.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="1,2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-11">
+                            <img class="img-responsive img-wrapper__img" src="img/links/cordyceps/cordyceps.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="1,2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-05">
+                            <img class="img-responsive img-wrapper__img" src="img/links/banner/banner.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="1,2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-06">
+                            <img class="img-responsive img-wrapper__img" src="img/links/hiphop/hiphop.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="1,2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-07">
+                            <img class="img-responsive img-wrapper__img" src="img/links/choco/choco.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="1,2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-08">
+                            <img class="img-responsive img-wrapper__img" src="img/links/brand/brand.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="1,2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-09">
+                            <img class="img-responsive img-wrapper__img" src="img/links/flower/flower.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="1,3" data-sort="value">
+                        <a class="img-wrapper" href="#modal-10">
+                            <img class="img-responsive img-wrapper__img" src="img/links/peanut/peanut.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-12">
+                            <img class="img-responsive img-wrapper__img" src="img/links/magz/magz.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-13">
+                            <img class="img-responsive img-wrapper__img" src="img/links/poster/poster.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-14">
+                            <img class="img-responsive img-wrapper__img" src="img/links/souplogo/souplogo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-15">
+                            <img class="img-responsive img-wrapper__img" src="img/links/vis/vis.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-16">
+                            <img class="img-responsive img-wrapper__img" src="img/links/ouye/ouye.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-17">
+                            <img class="img-responsive img-wrapper__img" src="img/links/express/express.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-18">
+                            <img class="img-responsive img-wrapper__img" src="img/links/coconut/coconut.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-19">
+                            <img class="img-responsive img-wrapper__img" src="img/links/piglogo/piglogo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                        <a class="img-wrapper" href="#modal-20">
+                            <img class="img-responsive img-wrapper__img" src="img/links/zx/zx.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="3" data-sort="value">
+                        <a class="img-wrapper" href="#modal-21">
+                            <img class="img-responsive img-wrapper__img" src="img/links/postercard/postercard.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="4" data-sort="value">
+                        <a class="img-wrapper" href="#modal-22">
+                            <img class="img-responsive img-wrapper__img" src="img/links/freg/freg.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="4" data-sort="value">
+                        <a class="img-wrapper" href="#modal-23">
+                            <img class="img-responsive img-wrapper__img" src="img/links/if/if.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="4" data-sort="value">
+                        <a class="img-wrapper" href="#modal-24">
+                            <img class="img-responsive img-wrapper__img" src="img/links/robot/robot.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="4" data-sort="value">
+                        <a class="img-wrapper" href="#modal-25">
+                            <img class="img-responsive img-wrapper__img" src="img/links/blind/blind.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="4" data-sort="value">
+                        <a class="img-wrapper" href="#modal-26">
+                            <img class="img-responsive img-wrapper__img" src="img/links/stew/stew.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 filtr-item" data-category="4" data-sort="value">
+                        <a class="img-wrapper" href="#modal-27">
+                            <img class="img-responsive img-wrapper__img" src="img/links/lamp/lamp.jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- IMAGE GALLERY END -->
+
+                    <!-- ABOUT ME -->
+                    <div class="col-md-12 filtr-item" data-category="5">
+                        <div class="about">
+                            <section class="about__banner">
+                                <img class="img-responsive" src="img/about.jpg" alt="">
+                            </section>
+                            <article class="about__content">
+                                <section>
+                                    <h1>[ &nbsp;&nbsp;学习&nbsp;&nbsp; ]<br>是一趟长途旅行</h1>
+                                    <p>学习是一趟长途旅行，设计是一条走不完的路，只要你还在道上，就必须奔跑。若论设计的启蒙，该回到 90代还是三线城市的我的家乡，那是一座现代化建设刚刚起步的城市，我对这几乎“设计空白“的城市进行了无限的想象力的创造，试图让她变得更美好，我想，这也是为什么后来在大学中选择了“设计”专业——设计，是让生活更美好，这也是艺术与设计的差别之处。而我也深知道自己想成为的是设计师。设计之路从此也开始了。</p>
+                                </section>
+                                <section>
+                                    <h1>[ &nbsp;&nbsp;设计&nbsp;&nbsp; ]<br>将生活变得更美好</h1>
+                                    <p><i>Design for the real world</i> &nbsp;这本书出自 Victor Papanek，对我启发特别大的一本书，设计是一种服务，它服务于整个世界，要做更有效的设计。“设计是一种经济的驱动力”——《设计中的设计》原研哉如是说， 设计才能具有竞争力和广泛的传播性，而设计的作品不是凭空的产物，它反映的是所在国家或者文化的水平，若我有什么样的奢望，那么是在本国情和文化的基础中，做出具有更为特色的作品。</p>
+                                </section>
+                                <section>
+                                    <h1>[ &nbsp;&nbsp;努力&nbsp;&nbsp; ]<br>是让自己进步的不二法门</h1>
+                                    <p>努力不是盲目的，学习也不应该是局限的：资源是广泛的，共享是国际性的。努力需要的是方法论，设计他并不是艺术，你若不是好的画家，但却可以是个好的设计师。而国际上的教育资源的丰富性，值得投资于自身的学习上的，例如 Lynda 和Skillshare 这两个平台是我常去学习的地方，巩固同时跟进更为先进的思想，我的 brushletter 手写艺术字体就是自学而来的。</p>
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- ABOUT ME NED -->
                 </div>
             </section>
             <!-- MAIN CONTENT END -->
@@ -90,37 +239,111 @@
         <!-- MODAL -->
         <div class="remodal" data-remodal-id="modal-01">
             <button data-remodal-action="close" class="remodal-close"></button>
-            <img class="img-responsive remodal__img" src="img/links/illus/illus-01.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/illus/illus-02.png" alt="">
-            <img class="img-responsive remodal__img" src="img/links/illus/illus-03.jpg" alt="">
+            <img class="img-responsive remodal__img" src="img/links/illus/illus01.png" alt="">
         </div>
         <div class="remodal" data-remodal-id="modal-02">
             <button data-remodal-action="close" class="remodal-close"></button>
             <img class="img-responsive remodal__img" src="img/links/card/card01.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card02.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card03.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card04.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card05.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card06.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card07.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card08.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card09.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card10.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card11.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card12.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card13.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card14.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card15.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card16.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/card/card17.jpg" alt="">
         </div>
         <div class="remodal" data-remodal-id="modal-03">
             <button data-remodal-action="close" class="remodal-close"></button>
             <img class="img-responsive remodal__img" src="img/links/24/2401.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/24/2402.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/24/2403.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/24/2404.jpg" alt="">
-            <img class="img-responsive remodal__img" src="img/links/24/2405.jpg" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-04">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/letter/letter01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-05">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/banner/banner01.jpg" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-06">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/hiphop/hiphop01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-07">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/choco/choco01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-08">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/brand/brand01.jpg" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-09">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/flower/flower01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-10">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/peanut/peanut01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-11">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/cordyceps/cordyceps0401.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-12">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/magz/magz01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-13">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/poster/poster01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-14">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/souplogo/souplogo01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-15">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/vis/vis01.jpg" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-16">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/ouye/ouye01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-17">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/express/express01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-18">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/coconut/coconut01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-19">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/piglogo/piglogo01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-20">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/zx/zx01.jpg" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-21">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/postercard/postercard01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-22">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/freg/freg01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-23">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/if/if01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-24">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/robot/robot01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-25">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/blind/blind01.png" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-26">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/stew/stew01.jpg" alt="">
+        </div>
+        <div class="remodal" data-remodal-id="modal-27">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img class="img-responsive remodal__img" src="img/links/lamp/lamp01.png" alt="">
         </div>
 
         <!-- MODAL END -->
