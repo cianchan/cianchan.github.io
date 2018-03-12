@@ -5,7 +5,7 @@ $(function() {
       options = {
          animationDuration: 0.25,
          filter: '1', // Initial filter
-      	 layout: 'sameSize',
+      	 layout: 'packed',
       }
     );
 });
