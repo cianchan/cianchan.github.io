@@ -1698,7 +1698,8 @@ header {
 
 .img-wrapper {
   display: block;
-  background-color: #000; }
+  background-color: #000;
+  margin-bottom: 30px; }
   .img-wrapper__img {
     transition: .15s all linear; }
   .img-wrapper:hover .img-wrapper__img, .img-wrapper:focus .img-wrapper__img {
