@@ -1,4 +1,4 @@
-@import '_normalize', '_grid', '_h5bp', '_remodal', '_remodal-default-theme';
+@import '_pace-theme-minimal.tmpl', '_normalize', '_grid', '_h5bp', '_remodal', '_remodal-default-theme';
 
 
 // ============================================
@@ -41,9 +41,8 @@ header {
 
 
 .logo {
-    display: flex;
+    text-align: center;
     &__img {
-        margin: auto;
         width: $size-logo;
         height: $size-logo;
         border-radius: 50%;

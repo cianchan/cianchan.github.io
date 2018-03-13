@@ -1,3 +1,9 @@
+// images loaded
+$('.filtr-container').imagesLoaded( function() {
+  // images have loaded
+});
+
+
 // filterizr
 $(function() {
     //Initialize filterizr with default options
