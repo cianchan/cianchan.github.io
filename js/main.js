@@ -1,20 +1,16 @@
-// images loaded
+// imagesLoaded & filterizr
 $('.filtr-container').imagesLoaded( function() {
-  // images have loaded
-});
-
-
-// filterizr
-$(function() {
-    //Initialize filterizr with default options
-    $('.filtr-container').filterizr(
+  // images have already loaded, instantiate Filterizr
+  var filterizr = $('.filtr-container').filterizr(
       options = {
          animationDuration: 0.25,
          filter: '1', // Initial filter
-      	 layout: 'packed',
+         layout: 'packed',
       }
     );
 });
+
+
 
 
 // tabs toggle class
