@@ -109,11 +109,14 @@ header {
     }
 }
 
+.filtr-item {
+    padding-bottom: 30px;
+}
+
 .img-responsive { width: 100% }
 .img-wrapper {
     display: block;
     background-color: #000;
-    margin-bottom: 30px;
 
     &__img {
         transition: .15s all linear;
