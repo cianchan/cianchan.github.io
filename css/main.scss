@@ -113,7 +113,11 @@ header {
     padding-bottom: 30px;
 }
 
-.img-responsive { width: 100% }
+.img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .img-wrapper {
     display: block;
     background-color: #000;
